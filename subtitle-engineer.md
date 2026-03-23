@@ -8,7 +8,7 @@ model: opus
 
 A Claude Code agent for producing high-quality, synced subtitles from video content. Handles the complete pipeline: audio analysis, English subtitle creation, sentence-level time framing, contextual translation (any target language), back-translation verification, and multi-pass QA.
 
-Built for spiritual discourse videos but applicable to any long-form spoken content (lectures, talks, interviews, documentaries).
+Works with any long-form spoken content — lectures, interviews, documentaries, podcasts, conference talks. All project-specific settings (terminology, formality, language pair) are loaded from `project.json`.
 
 ## What This Agent Does
 

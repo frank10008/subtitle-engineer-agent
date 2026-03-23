@@ -1,0 +1,45 @@
+{
+  "project_dir": "/path/to/your/project",
+  "source_lang": "en",
+  "target_lang": "de",
+  "llm": {
+    "api_url": "https://api.openai.com/v1/chat/completions",
+    "api_key": "YOUR_API_KEY_HERE",
+    "model": "gpt-4o-mini"
+  },
+  "series": {
+    "my-lecture-series": {
+      "prefix": "EP",
+      "srt_dir": "subtitles",
+      "srt_pattern": "Episode_{num:02d}.srt"
+    }
+  },
+  "episode_contexts": {
+    "EP 01 - Introduction": "Opening lecture covering course overview and key themes."
+  },
+  "subtitle_rules": [
+    "Max 21 CPS (characters per second)",
+    "Max 42 characters per line",
+    "Translate meaning, not word-for-word",
+    "Use natural, conversational tone"
+  ],
+  "formality": "informal",
+  "formality_checks": {
+    "wrong": "Sie",
+    "except": "siehe"
+  },
+  "preserve_terms": [
+    "proper nouns",
+    "technical terms",
+    "brand names"
+  ],
+  "known_fixes": {
+    "common misheard phrase": "correct phrase"
+  },
+  "difficulty_keywords": {
+    "metaphors": ["like", "as if", "imagine", "suppose", "just as", "the way"],
+    "complex": ["technical", "specialized", "terminology", "here"]
+  },
+  "max_cps": 21,
+  "max_line_chars": 42
+}
